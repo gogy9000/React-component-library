@@ -1,4 +1,5 @@
 import React from 'react'
+// @ts-ignore
 import {Routes, Route, Navigate} from 'react-router-dom'
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
