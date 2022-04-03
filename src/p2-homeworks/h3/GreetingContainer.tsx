@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -23,7 +23,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     let [totalUsers, setTotalUsers] = useState<number>(0)
     //счетчик срабатывает при нажатии кнопки "add"
 
-    const setNameCallback = (e: any) => setName(e.target.value) //еще не допер как типизировать ивенты
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => setName(e.target.value) //еще не допер как типизировать ивенты
     // берет значение из инпута и присваевает его в setState
 
     const addUser = () => {

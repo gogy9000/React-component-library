@@ -28,7 +28,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         <div>
             <input value={valueMessage} onChange={setNameCallback} onClick={refresh}
                    className={!error ? s.notError : s.error}/>
-            {/*<span>{error}</span>*/} //я хз для чего он был нужен
+            {/*<span>{error}</span>*/}
             <button onClick={addUser}>add</button>
 
 
