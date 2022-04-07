@@ -1,3 +1,11 @@
 .someClass {
 
 }
+.affair{
+    margin: 3px;
+}
+.affairBlock{
+    margin: 3px;
+    text-align: right;
+    padding-right:45%;
+}
