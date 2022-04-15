@@ -2,7 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType} from './HW2'
 
-type AffairsPropsType = { // need to fix any(fixed!)
+type AffairsPropsType = {
     data: Array<AffairType>
 
     setFilter:(filter:string)=>void
@@ -13,15 +13,15 @@ function Affairs(props: AffairsPropsType) {
 
     const mappedAffairs = props.data.map((affair: AffairType) => (
 
-        <Affair // should work
-            key={affair._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+        <Affair
+            key={affair._id}
             affair={affair}
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    const setAll = () => {props.setFilter('All')} // need to fix(fixed!)
+
+    const setAll = () => {props.setFilter('All')}
     const setHigh = () => {props.setFilter('High')}
     const setMiddle = () => {props.setFilter('Middle')}
     const setLow = () => {props.setFilter('Low')}

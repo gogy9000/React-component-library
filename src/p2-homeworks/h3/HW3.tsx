@@ -7,22 +7,23 @@ import GreetingContainer from './GreetingContainer'
 
 // types
 export type UserType = {
-    _id: number | null
-    name: string | null
+    _id: string
+    name: string
 }
 
 
 function HW3() {
-    const [users, setUsers] = useState<Array<UserType>>([{_id: null, name: null}])
+    const [users, setUsers] = useState<Array<UserType>>([{_id: 'null', name: 'null'}])
     // сверху основной стейт с массивом значений из инпута и _id в виде обЪектов
     const [error, setError] = useState<boolean>(false)
     // булевый переключатель стилей рамки  s.error|s.notError
 
 
     const addUserCallback = (user: UserType) => {
-        users.every((item: UserType) => item.name !== user.name)
-            ? setUsers([...users, user])
-            : setError(true)
+        alert('Hello '+user.name)
+        setUsers([...users, user])
+
+
     }
     // функция проверяет введеное значение с со значениями которые вводились ранее
     // метод every пробегается по массиву и если совпадет хотя бы одно из ранее вводимых значений с введеным
@@ -34,6 +35,9 @@ function HW3() {
     }
     //переключает обратно error на false при клике по инпуту
 
+    const setErrorCallback = () => {
+        setError(true)
+    }
     return (
         <div>
             <hr/>
@@ -43,7 +47,8 @@ function HW3() {
             <GreetingContainer users={users}
                                addUserCallback={addUserCallback}
                                error={error}
-                               refreshValueCallBack={refreshValueCallBack}/>
+                               refreshValueCallBack={refreshValueCallBack}
+                               setErrorCallBack={setErrorCallback}/>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

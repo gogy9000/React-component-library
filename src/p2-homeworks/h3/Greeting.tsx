@@ -17,19 +17,20 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers, users, refreshValueCallBack}
 ) => {
 
-    let valueMessage = !error ? name : 'value has already been entered'
+    let valueMessage = !error ? name : 'error'
     //если значение ранее не вводилось то держит значение в состоянии ввода
     //если значение ранее вводилось то выводит предупреждение прямо в инпут
 
     let refresh = () => refreshValueCallBack()
     //вызывает колобек который обнуляет инпут при клике на инпут после вывода предупреждения
-
+    console.log(users)
     return (
         <div>
             <input value={valueMessage} onChange={setNameCallback} onClick={refresh}
                    className={!error ? s.notError : s.error}/>
-            {/*<span>{error}</span>*/}
+
             <button onClick={addUser}>add</button>
+            <span>{totalUsers}</span>
 
 
         </div>

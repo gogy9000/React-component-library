@@ -33,8 +33,10 @@ export const deleteAffair = (affairs: Array<AffairType>, _id: number) => {
 
     return (affairs.filter((affair: AffairType) => affair._id != _id))
 }
-// функция с помощью метода filter(не путать с хуком котрый ниже написан) возвращает только те объекты в массиве defaultAffairs,
-// которые не равны значению _id  которое передается в функцию в качестве аргумена при вызове этой функции в deleteAffairCallback
+// функция с помощью метода filter(не путать с хуком котрый ниже написан) возвращает только те объекты в массиве
+// defaultAffairs,
+// которые не равны значению _id  которое передается в функцию в качестве аргумена при вызове этой функции в
+// deleteAffairCallback
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)

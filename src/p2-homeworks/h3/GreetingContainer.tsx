@@ -1,12 +1,15 @@
 import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
+import {v1} from "uuid";
+
 
 type GreetingContainerPropsType = {
     users: Array<UserType>
     addUserCallback: (user: UserType) => void
     error: boolean
     refreshValueCallBack: () => void
+    setErrorCallBack: () => void
 }
 
 
@@ -14,7 +17,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
                                                                      users,
                                                                      addUserCallback,
                                                                      error,
-                                                                     refreshValueCallBack
+                                                                     refreshValueCallBack,
+                                                                     setErrorCallBack
                                                                  }) => {
 
     const [name, setName] = useState<string>('')
@@ -27,9 +31,20 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     // берет значение из инпута и присваевает его в setState
 
     const addUser = () => {
-        addUserCallback({name: name, _id: users.length})
+        let regExp = (/^\s+$/).test(name)
+        //регулярка ищет совпадения, если от начала до конца одни тодько
+        // пробелы, то возвращает true
+        if (regExp || !name || !users.every((item: UserType) => item.name !== name)) {
+            //если регулярка тру или не name тру или  в массиве уже есть обЪекты с
+            // такими же значениями в свойстве name, то состояние error тру и name
+            // пустая строка
+            setErrorCallBack()
+            return setName('')
+        }
+        addUserCallback({name: name.trim(), _id: v1()})
+        //трим обрезает пробелы в начале и в конце
         setName('')
-        setTotalUsers(++totalUsers)
+        setTotalUsers(totalUsers = users.length)
     }
     // при нажатии на кнопку, вызывает addUserCallback и отдает ему обЪект user в качестве аргумента,
     //потом обнуляет значение в setName
