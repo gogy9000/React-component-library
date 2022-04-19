@@ -27,7 +27,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     let [totalUsers, setTotalUsers] = useState<number>(0)
     //счетчик срабатывает при нажатии кнопки "add"
 
-    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => setName(e.target.value) //еще не допер как типизировать ивенты
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)
     // берет значение из инпута и присваевает его в setState
 
     const addUser = () => {

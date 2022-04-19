@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 
 // Я как обычно до конца не понял что требовалось, по этому теперь эта компонента  копит в стейте введеные значения
 // в виде {_id:number, name:string} и не копит если значение в инпуте вводилось ранее, при этом меняет
@@ -49,6 +50,7 @@ function HW3() {
                                error={error}
                                refreshValueCallBack={refreshValueCallBack}
                                setErrorCallBack={setErrorCallback}/>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

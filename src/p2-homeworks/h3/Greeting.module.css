@@ -5,6 +5,7 @@
 .error {
     border: 1px solid red;
     border-radius: 1px;
+    color: red;
 }
 .notError{
     border: 1px solid #050505;
