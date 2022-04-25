@@ -1,0 +1,50 @@
+.Header{
+    text-align: left;
+    display: grid;
+    grid-template-areas: 'button menu  ';
+    grid-template-columns: 1fr 17fr;
+}
+.button{
+    grid-area: button ;
+}
+.menu{
+
+    grid-area: menu;
+    text-align: left;
+    transform: translate(-200%);
+    transition: all 0.4s;
+    text-decoration: none;
+
+}
+.Active {
+
+    grid-area: menu;
+    text-align: left;
+    transform: translate(0);
+    transition: all 0.4s;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+.mouseUp{
+    background-color: #c4bfbf;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 1px 3px 1px 3px;
+    font-family: -apple-system;
+    color: #050505;
+    margin: 5px;
+}
+.mouseMove{
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 1px 3px 1px 3px;
+    font-family: -apple-system;
+    color: #050505;
+    margin: 5px;
+}

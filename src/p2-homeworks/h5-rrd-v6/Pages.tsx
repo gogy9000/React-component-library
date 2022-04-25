@@ -6,6 +6,9 @@ import Error404 from "./pages/Error404";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
+    JUNIOR:'/junior',
+    JUNIOR_PlUS:'/junior-plus'
+
     // add paths
 }
 
@@ -21,6 +24,9 @@ function Pages() {
             <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR}/>}/>
 
             <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
+            <Route path={PATH.JUNIOR} element={<Junior/>}/>
+            <Route path={PATH.JUNIOR_PlUS} element={<JuniorPlus/>}/>
+
                 // add routes
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
@@ -32,3 +38,14 @@ function Pages() {
 }
 
 export default Pages
+
+export const Junior = () => {
+
+  return<>asd</>
+}
+
+export const JuniorPlus = () => {
+  return<>dsa</>
+
+
+}
