@@ -41,11 +41,11 @@ export default Pages
 
 export const Junior = () => {
 
-  return<>asd</>
+  return<>Junior</>
 }
 
 export const JuniorPlus = () => {
-  return<>dsa</>
+  return<>JuniorPlus</>
 
 
 }

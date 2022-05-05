@@ -18,7 +18,7 @@ function Header() {
         <div className={style.Header}>
 
             <div
-                className={activeMenu ? style.menu : style.Active }>
+                className={!activeMenu ? style.menu : style.Active }>
 
                 <OnMouseMoveTag>
                     <NavLink to={PATH.PRE_JUNIOR}> pre-junior</NavLink>
