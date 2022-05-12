@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import React, {Dispatch, SetStateAction, useEffect, useState} from 'react'
+import {ActionsType, homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 
@@ -50,7 +50,7 @@ function HW8() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            <AlternativePeople />
+            <AlternativePeople people={people} setPeople={setPeople} finalPeople={finalPeople}/>
             <hr/>
         </div>
     )
@@ -58,9 +58,38 @@ function HW8() {
 
 export default HW8
 
+type AlternativePeopleType={
+    people:Array<UserType>
+    setPeople: Dispatch<SetStateAction<UserType[]>>
+    finalPeople:Array<JSX.Element>
+}
+const AlternativePeople:React.FC<AlternativePeopleType> = ({people, setPeople , finalPeople}) => {
 
-const AlternativePeople = () => {
-  return(
-      <></>
-  )
+    const [arr, setArr] = useState<Array<string>>([])
+    const [value, onChangeOption] = useState<string>(arr[0])
+
+    useEffect(()=> {
+        let arrAge = people.map(item => String(item.age))
+        setArr([...arrAge])
+    },[])
+
+
+
+    const check18 = (checkAge:string) => {
+        let checkAgeNumber=Number(checkAge)
+        onChangeOption(checkAge)
+        setPeople(homeWorkReducer(initialPeople,{type: 'check', payload: checkAgeNumber}))
+    }
+
+
+    return (
+        <div>
+            <hr/>
+            homeworks 8
+            <div><SuperRadio name={'radio1'}
+                             options={arr}
+                             value={value}
+                             onChangeOption={check18}/></div>
+        </div>
+            )
 }

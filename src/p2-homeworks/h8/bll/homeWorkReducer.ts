@@ -1,6 +1,6 @@
 import {UserType} from "../HW8";
 
-type ActionsType = {
+export type ActionsType = {
     type: string
     payload: string|number
 }
