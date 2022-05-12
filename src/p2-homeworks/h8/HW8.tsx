@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 
 export type UserType ={
     _id: number
@@ -29,7 +30,11 @@ function HW8() {
     ))
 
     const sortUpAndDown = (vector:'up'|'down') => {
-        setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: vector}))
+        setPeople(homeWorkReducer(people, {type: 'sort', payload: vector}))
+    }
+
+    const check18 = (checkAge:number) => {
+      setPeople(homeWorkReducer(initialPeople,{type: 'check', payload: checkAge}))
     }
 
     return (
@@ -37,19 +42,25 @@ function HW8() {
             <hr/>
             homeworks 8
 
-            {/*should work (должно работать)*/}
             {finalPeople}
 
             <div><SuperButton onClick={()=>{sortUpAndDown('up')}}>sort up</SuperButton></div>
             <div><SuperButton onClick={()=>{sortUpAndDown('down')}}>sort down</SuperButton></div>
-            check 18
+           <div><SuperButton onClick={()=>{check18(16)}}>check 16</SuperButton></div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
+            <AlternativePeople />
             <hr/>
         </div>
     )
 }
 
 export default HW8
+
+
+const AlternativePeople = () => {
+  return(
+      <></>
+  )
+}
