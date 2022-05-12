@@ -3,6 +3,7 @@ import React from 'react'
 import {Routes, Route, Navigate} from 'react-router-dom'
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
+import HW7 from "../h7/HW7";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -41,7 +42,11 @@ export default Pages
 
 export const Junior = () => {
 
-  return<>Junior</>
+  return(
+      <>
+        <HW7/>
+      </>
+  )
 }
 
 export const JuniorPlus = () => {
