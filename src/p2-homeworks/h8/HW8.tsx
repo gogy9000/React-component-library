@@ -28,7 +28,9 @@ function HW8() {
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortUpAndDown = (vector:'up'|'down') => {
+        setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: vector}))
+    }
 
     return (
         <div>
@@ -38,8 +40,8 @@ function HW8() {
             {/*should work (должно работать)*/}
             {finalPeople}
 
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
+            <div><SuperButton onClick={()=>{sortUpAndDown('up')}}>sort up</SuperButton></div>
+            <div><SuperButton onClick={()=>{sortUpAndDown('down')}}>sort down</SuperButton></div>
             check 18
 
             <hr/>
