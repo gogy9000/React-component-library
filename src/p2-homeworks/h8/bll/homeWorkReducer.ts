@@ -2,12 +2,12 @@ import {UserType} from "../HW8";
 
 export type ActionsType = {
     type: string
-    payload: string|number
+    payload: string
 }
 
 
 
-export const homeWorkReducer = (state: Array<UserType>, action: ActionsType) => {
+export const homeWorkReducer = (state: Array<UserType>, action: ActionsType):Array<UserType> => {
     switch (action.type) {
         case 'sort':
 
@@ -20,7 +20,7 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionsType) => 
 
         case 'check':
 
-            return state.filter((item)=>item.age!==action.payload)
+            return state.filter((item)=>action.payload!=='all'?item.age===Number(action.payload):true)
 
         default:
             return state

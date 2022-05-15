@@ -20,7 +20,7 @@ test('filter by all', () => {
 })
 test('filter by high', () => {
     const newState = filterAffairs(initialState, 'High')
-    expect(newState.length).toBe(2)
+    expect(newState.length).toBe(3)
 })
 test('filter by middle', () => {
     const newState = filterAffairs(initialState, 'Middle')
@@ -28,5 +28,5 @@ test('filter by middle', () => {
 })
 test('filter by low', () => {
     const newState = filterAffairs(initialState, 'Low')
-    expect(newState.length).toBe(3)
+    expect(newState.length).toBe(2)
 })

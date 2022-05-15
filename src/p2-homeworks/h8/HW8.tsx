@@ -76,9 +76,8 @@ const AlternativePeople:React.FC<AlternativePeopleType> = ({people, setPeople , 
 
 
     const check18 = (checkAge:string) => {
-        let checkAgeNumber=Number(checkAge)
         onChangeOption(checkAge)
-        setPeople(homeWorkReducer(initialPeople,{type: 'check', payload: checkAgeNumber}))
+        setPeople(homeWorkReducer(initialPeople,{type: 'check', payload: checkAge}))
     }
 
 
@@ -90,6 +89,8 @@ const AlternativePeople:React.FC<AlternativePeopleType> = ({people, setPeople , 
                              options={arr}
                              value={value}
                              onChangeOption={check18}/></div>
+            <SuperButton onClick={()=>{check18('all')}}>get all</SuperButton>
         </div>
+
             )
 }

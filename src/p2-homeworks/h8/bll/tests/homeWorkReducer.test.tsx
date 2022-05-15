@@ -46,7 +46,7 @@ test('check age ', () => {
     const newState = homeWorkReducer(initialState, action)
 
     expect(
-        newState.some((item)=>item.age===action.payload)
+        newState.some((item)=>item.age!==action.payload)
 
     ).toBeFalsy()
 })
