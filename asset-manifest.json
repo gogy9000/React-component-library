@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.276a2fc4.chunk.css",
-    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.acfffa89.chunk.js",
-    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.acfffa89.chunk.js.map",
+    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.11872930.chunk.js",
+    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.11872930.chunk.js.map",
     "runtime-main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js",
     "runtime-main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js.map",
     "static/js/2.57acca9f.chunk.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.57acca9f.chunk.js",
     "static/js/2.57acca9f.chunk.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.57acca9f.chunk.js.map",
     "index.html": "/simple-homework-by-Ignat-Zakalinsky/index.html",
-    "precache-manifest.b86426c37881886b4f3d46be222c4b9c.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.b86426c37881886b4f3d46be222c4b9c.js",
+    "precache-manifest.aa206cf8d3ffcefe1d165170acddfce8.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.aa206cf8d3ffcefe1d165170acddfce8.js",
     "service-worker.js": "/simple-homework-by-Ignat-Zakalinsky/service-worker.js",
     "static/css/main.276a2fc4.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.276a2fc4.chunk.css.map",
     "static/js/2.57acca9f.chunk.js.LICENSE.txt": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.57acca9f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d4636143.js",
     "static/js/2.57acca9f.chunk.js",
     "static/css/main.276a2fc4.chunk.css",
-    "static/js/main.acfffa89.chunk.js"
+    "static/js/main.11872930.chunk.js"
   ]
 }
