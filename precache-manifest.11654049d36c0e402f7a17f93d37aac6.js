@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "76a2dbdc7ea023a9d9f42d97fb10ee4f",
+    "revision": "e04581c7db79ac2c88cdab6ebb109dd9",
     "url": "/simple-homework-by-Ignat-Zakalinsky/index.html"
   },
   {
-    "revision": "5c425aaa12f5f8521641",
+    "revision": "3c8d30ab28d22a61f2b7",
     "url": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.276a2fc4.chunk.css"
   },
   {
-    "revision": "6ec0235356ef0608137d",
-    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.57acca9f.chunk.js"
+    "revision": "fb32ce16cd4a4d688dea",
+    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.2fede0c8.chunk.js"
   },
   {
     "revision": "0c91d6cf6408089b81f706ebde51ebe6",
-    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.57acca9f.chunk.js.LICENSE.txt"
+    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.2fede0c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c425aaa12f5f8521641",
-    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.11872930.chunk.js"
+    "revision": "3c8d30ab28d22a61f2b7",
+    "url": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.1f01a155.chunk.js"
   },
   {
     "revision": "c214f23f543f60ed83f3",
