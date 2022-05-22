@@ -2,7 +2,7 @@ import {UserType} from "../HW8";
 
 export type ActionsType = {
     type: string
-    payload: string
+    payload: string|number
 }
 
 

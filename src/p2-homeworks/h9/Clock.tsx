@@ -1,31 +1,49 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
+
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
-    const [date, setDate] = useState<Date>()
+    let [date, setDate] = useState<Date>(new Date())
     const [show, setShow] = useState<boolean>(false)
 
-    const stop = () => {
-        // stop
+    let [seconds, setSeconds]= useState<number>(0)
+    let [minutes, setMinutes]= useState<number>(0)
+    let [hours, setHours]= useState<number>(0)
+
+    const getTime = () => {
+        setHours(hours===23&&minutes===59&&seconds===59?hours=0:minutes===59&&seconds===59?hours=hours+1:hours)
+        setMinutes(minutes===59&&seconds===59?minutes=0:seconds===59?minutes=minutes+1:minutes)
+        setSeconds(seconds===59?seconds=0:seconds=seconds+1)
+
+
     }
+
     const start = () => {
         stop()
-        const id: number = window.setInterval(() => {
-            // setDate
-        }, 1000)
+        let id: number = window.setInterval(() => {
+            getTime()
+        }, 10)
         setTimerId(id)
+    }
+    const stop = () => {
+        clearInterval(timerId)
+        setSeconds(0)
+        setMinutes(0)
+        setHours(0)
+
     }
 
     const onMouseEnter = () => {
-        // show
+        setShow(true)
     }
     const onMouseLeave = () => {
-        // close
+        setShow(false)
     }
 
-    const stringTime = 'Time' // fix with date
-    const stringDate = 'Date' // fix with date
+    const stringTime = `${hours<10?0:''}${hours}:${minutes<10?0:''}${minutes}:${seconds<10?0:''}${seconds}`
+    const stringDate = date.toLocaleDateString()
+
 
     return (
         <div>
@@ -42,7 +60,7 @@ function Clock() {
                 </div>
             )}
 
-            <SuperButton onClick={start}>start</SuperButton>
+            <SuperButton onMouseDown={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>
 
         </div>

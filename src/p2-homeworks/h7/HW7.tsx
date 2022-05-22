@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
-const arr = ['x', 'y', 'z'] as Array<string>
+const arr = ['x', 'y', 'z',2] as Array<string>
 
 function HW7() {
-    const [value, onChangeOption] = useState<string>(arr[1])
+    const [value, onChangeOption] = useState<string|number>(arr[0])
 
     return (
         <div>

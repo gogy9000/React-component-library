@@ -66,7 +66,7 @@ type AlternativePeopleType={
 const AlternativePeople:React.FC<AlternativePeopleType> = ({people, setPeople , finalPeople}) => {
 
     const [arr, setArr] = useState<Array<string>>([])
-    const [value, onChangeOption] = useState<string>(arr[0])
+    const [value, onChangeOption] = useState<string|number>(arr[0])
 
     useEffect(()=> {
         let arrAge = people.map(item => String(item.age))
@@ -75,7 +75,7 @@ const AlternativePeople:React.FC<AlternativePeopleType> = ({people, setPeople , 
 
 
 
-    const check18 = (checkAge:string) => {
+    const check18 = (checkAge:string|number) => {
         onChangeOption(checkAge)
         setPeople(homeWorkReducer(initialPeople,{type: 'check', payload: checkAge}))
     }
