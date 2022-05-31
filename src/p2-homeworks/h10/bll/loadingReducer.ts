@@ -1,14 +1,30 @@
-const initState = {
 
+const initState = {
+loading: false
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+type initStateType=typeof initState
+type ActionsType= InferActionsTypes<typeof actions>
+export type InferActionsTypes <T> = T extends { [keys: string]: (...args: any[]) => infer U } ? U : never
+
+export const loadingReducer = (state:initStateType = initState, action: ActionsType): initStateType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case 'TOGGLE-LOADING': {
+            return {...state, loading: action.isLoading}
         }
         default: return state
     }
 }
+export const actions={
+    loadingAC : (isLoading:boolean) => ({type: 'TOGGLE-LOADING', isLoading} as const)
+}
 
-export const loadingAC = (): any => {} // fix any
+export const startDownloadTC = () => (dispatch:(ac:ActionsType)=>void)=>{
+    dispatch(actions.loadingAC(true))
+    console.log('loading...')
+    setTimeout(()=>{
+        dispatch(actions.loadingAC(false))
+    },2000)
+}
+  
+
