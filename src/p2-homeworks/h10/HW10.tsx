@@ -9,7 +9,7 @@ function HW10() {
     const dispatch = useDispatch()
 
     const setLoading = () => {
-        // @ts-ignore
+        // @ts-ignore  //по какой-то причине ругается на типизацию dispatch
         dispatch(startDownloadTC())
     };
     

@@ -12,9 +12,9 @@ function Clock() {
     }
 
     const [timerId, setTimerId] = useState<number>(0)
-    let [date, setDate] = useState<Date>(new Date())
+    const [date, setDate] = useState<Date>(new Date)
     const [show, setShow] = useState<boolean>(false)
-    const [time, setTime] = useState<string>(getTime())
+    const [time, setTime] = useState<string>(getTime)
 
     const start = () => {
         stop()
@@ -38,7 +38,7 @@ function Clock() {
 
     const stringTime = time
 
-    const stringDate = date.toLocaleDateString()
+    const stringDate = date.toLocaleDateString() || <br/>
 
 
     return (
