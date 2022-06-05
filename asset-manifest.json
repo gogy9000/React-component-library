@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.276a2fc4.chunk.css",
-    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.5a64aaae.chunk.js",
-    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.5a64aaae.chunk.js.map",
+    "main.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.19dd67ab.chunk.css",
+    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.98464384.chunk.js",
+    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.98464384.chunk.js.map",
     "runtime-main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js",
     "runtime-main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js.map",
-    "static/js/2.e40f7be6.chunk.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.e40f7be6.chunk.js",
-    "static/js/2.e40f7be6.chunk.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.e40f7be6.chunk.js.map",
+    "static/css/2.4b8af39d.chunk.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/2.4b8af39d.chunk.css",
+    "static/js/2.6c61e43f.chunk.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.6c61e43f.chunk.js",
+    "static/js/2.6c61e43f.chunk.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.6c61e43f.chunk.js.map",
     "index.html": "/simple-homework-by-Ignat-Zakalinsky/index.html",
-    "precache-manifest.611640a4d9323899e3eb116673a620a1.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.611640a4d9323899e3eb116673a620a1.js",
+    "precache-manifest.d8f2a80c6f4cfacde1c0ffffeb4aa039.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.d8f2a80c6f4cfacde1c0ffffeb4aa039.js",
     "service-worker.js": "/simple-homework-by-Ignat-Zakalinsky/service-worker.js",
-    "static/css/main.276a2fc4.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.276a2fc4.chunk.css.map",
-    "static/js/2.e40f7be6.chunk.js.LICENSE.txt": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.e40f7be6.chunk.js.LICENSE.txt"
+    "static/css/2.4b8af39d.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/2.4b8af39d.chunk.css.map",
+    "static/css/main.19dd67ab.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.19dd67ab.chunk.css.map",
+    "static/js/2.6c61e43f.chunk.js.LICENSE.txt": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.6c61e43f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d4636143.js",
-    "static/js/2.e40f7be6.chunk.js",
-    "static/css/main.276a2fc4.chunk.css",
-    "static/js/main.5a64aaae.chunk.js"
+    "static/css/2.4b8af39d.chunk.css",
+    "static/js/2.6c61e43f.chunk.js",
+    "static/css/main.19dd67ab.chunk.css",
+    "static/js/main.98464384.chunk.js"
   ]
 }
