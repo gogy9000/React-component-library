@@ -14,7 +14,7 @@ type SuperDoubleRangePropsType = {
 }
 
 export const SuperDoubleRange = (props: SuperDoubleRangePropsType) => {
-    let {value, min, max, step, setValue1, setValue2} = props
+    let {value, min, max, setValue1, setValue2} = props
 
     const onChangeCallback = (val: any) => {
 
