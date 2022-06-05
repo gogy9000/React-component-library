@@ -1,51 +1,42 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
-import s from "../c7-SuperRange/SuperRange.module.css";
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-type SuperDoubleRangePropsType =DefaultInputPropsType&{
-    onChangeRange?: (value: number[]) => void
-    // value?: [number,number]
-     // min:string
-    // max,
-    // step,
-    // disable,
+import React from 'react'
+import Slider from "rc-slider";
+import 'rc-slider/assets/index.css';
+
+
+type SuperDoubleRangePropsType = {
+    setValue1:  React.Dispatch<React.SetStateAction<number>>
+    setValue2:  React.Dispatch<React.SetStateAction<number>>
+    value?: number[]
+    min?: number
+    max?: number
+    step?: number
+    disable?: boolean
 }
 
-export const SuperDoubleRange:React.FC<SuperDoubleRangePropsType> = (
-    {
-        value,
-        min,
-        max,
-        step,
-        // disable,
-        // ...
-        type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
-        onChange, onChangeRange,
-        className,
+export const SuperDoubleRange = (props: SuperDoubleRangePropsType) => {
+    let {value, min, max, step, setValue1,setValue2} = props
 
-        ...restProps// все остальные пропсы попадут в объект restProps
-    }
-) => {
-    // сделать самому, можно подключать библиотеки
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e) // сохраняем старую функциональность
+    const onChangeCallback = (val:any) => {
 
-        // onChangeRange && onChangeRange(value,+e.currentTarget.value)
+        setValue1(val[0] as number)
+        setValue2(val[1] as number)
     }
 
-    const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
     return (
-        <>
-            <input
-                type={'range'}
-                value={value}
-                onChange={onChangeCallback}
-                className={finalRangeClassName}
 
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-            />
-        </>
+        <div style={{width: 200, margin:10}}>
+
+            <Slider range
+                    onChange={onChangeCallback}
+                    value={value}
+                    min={min}
+                    max={max}/>
+        </div>
+
+
     )
+
 }
 
-export default SuperDoubleRange
+
