@@ -1,3 +1,4 @@
+import {InferActionsTypes} from "./store";
 
 const initState = {
 loading: false
@@ -5,7 +6,8 @@ loading: false
 
 type initStateType=typeof initState
 type ActionsType= InferActionsTypes<typeof actions>
-export type InferActionsTypes <T> = T extends { [keys: string]: (...args: any[]) => infer U } ? U : never
+
+ // type InferActionsTypes <T> = T extends { [keys: string]: (...args: any[]) => infer U } ? U : never
 
 export const loadingReducer = (state:initStateType = initState, action: ActionsType): initStateType => { // fix any
     switch (action.type) {

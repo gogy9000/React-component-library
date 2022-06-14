@@ -5,7 +5,7 @@ type DefaultRadioPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 
 type SuperRadioPropsType = DefaultRadioPropsType & {
     options?: any[]
-    onChangeOption: (option: string|number) => void
+    onChangeOption?: (option: string|number) => void
 }
 
 const SuperRadio: React.FC<SuperRadioPropsType> = (

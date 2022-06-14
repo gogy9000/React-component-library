@@ -21,3 +21,15 @@
 .some-text {
     color: darkslateblue;
 }
+.primary{
+    background-color: cornflowerblue;
+}
+.primary-text{
+    color: #fafafa;
+}
+.secondary{
+    background-color: #cc1af1;
+}
+.secondary-text{
+    color: #050505;
+}
