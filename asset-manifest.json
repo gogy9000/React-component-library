@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.ce0ed6a5.chunk.css",
-    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.b3381b48.chunk.js",
-    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.b3381b48.chunk.js.map",
+    "main.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.0a3fc435.chunk.css",
+    "main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.11b0ed78.chunk.js",
+    "main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/main.11b0ed78.chunk.js.map",
     "runtime-main.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js",
     "runtime-main.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/runtime-main.d4636143.js.map",
     "static/css/2.4b8af39d.chunk.css": "/simple-homework-by-Ignat-Zakalinsky/static/css/2.4b8af39d.chunk.css",
     "static/js/2.8dfbc920.chunk.js": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.8dfbc920.chunk.js",
     "static/js/2.8dfbc920.chunk.js.map": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.8dfbc920.chunk.js.map",
     "index.html": "/simple-homework-by-Ignat-Zakalinsky/index.html",
-    "precache-manifest.45eaf22404d397192dd5ccae9c06167d.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.45eaf22404d397192dd5ccae9c06167d.js",
+    "precache-manifest.a0b90aa2823fe5911b8a1bc19d269c65.js": "/simple-homework-by-Ignat-Zakalinsky/precache-manifest.a0b90aa2823fe5911b8a1bc19d269c65.js",
     "service-worker.js": "/simple-homework-by-Ignat-Zakalinsky/service-worker.js",
     "static/css/2.4b8af39d.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/2.4b8af39d.chunk.css.map",
-    "static/css/main.ce0ed6a5.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.ce0ed6a5.chunk.css.map",
+    "static/css/main.0a3fc435.chunk.css.map": "/simple-homework-by-Ignat-Zakalinsky/static/css/main.0a3fc435.chunk.css.map",
     "static/js/2.8dfbc920.chunk.js.LICENSE.txt": "/simple-homework-by-Ignat-Zakalinsky/static/js/2.8dfbc920.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d4636143.js",
     "static/css/2.4b8af39d.chunk.css",
     "static/js/2.8dfbc920.chunk.js",
-    "static/css/main.ce0ed6a5.chunk.css",
-    "static/js/main.b3381b48.chunk.js"
+    "static/css/main.0a3fc435.chunk.css",
+    "static/js/main.11b0ed78.chunk.js"
   ]
 }
